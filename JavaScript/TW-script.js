@@ -1,3 +1,29 @@
+const carousel = document.querySelector('#carouselExampleIndicators');
+let touchStartX = 0;
+let touchEndX = 0;
+
+carousel.addEventListener('touchstart', (e) => {
+    touchStartX = e.changedTouches[0].screenX;
+});
+
+carousel.addEventListener('touchend', (e) => {
+    touchEndX = e.changedTouches[0].screenX;
+    handleSwipe();
+});
+
+function handleSwipe() {
+    const swipeDistance = touchStartX - touchEndX;
+    if (swipeDistance > 50) {
+        // Swipe Left → Next Slide
+        const nextButton = carousel.querySelector('.carousel-control-next');
+        nextButton.click();
+    } else if (swipeDistance < -50) {
+        // Swipe Right → Previous Slide
+        const prevButton = carousel.querySelector('.carousel-control-prev');
+        prevButton.click();
+    }
+}
+
 document.addEventListener("DOMContentLoaded", function () {
     const tabs = document.querySelectorAll(".tab");
     const title = document.getElementById("feature-title");
