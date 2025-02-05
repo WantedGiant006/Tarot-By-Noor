@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/Tw-styles.css">
+    <link rel="stylesheet" href="./CSS/uikit.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="./SVGs/Favicon.svg">
+    <title>Tarot by Noor</title>
+</head>
+<body>
+    <div id="to-top">
+      <a href="#" class="to-top-svg"><img src="./SVGs/To-Top.svg" alt="Arrow Head SVG" width="50px"></a>
+    </div>
+
+    <nav class="navbar navbar-expand-md fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="./Logo.png" alt="Logo" width="170px" style="padding: 0px;"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <img src="./SVGs/Menu.svg" width="30px" height="30px" alt="Toggle Button">
+        </button>
+                  <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link active" id="products" aria-current="page" href="#product">
+                  <img src="./SVGs/Product.svg" alt="Product SVG" width="40px">
+                  Product</a>
+                </li>
+                <li class="nav-item" id="features">
+                  <a class="nav-link active" aria-current="page" href="#feature">
+                  <img src="./SVGs/Features.svg" alt="Product SVG" width="35px">
+                  Features</a>
+                </li>
+                <li class="nav-item" id="testimonials">
+                  <a class="nav-link active" aria-current="page" href="#testimonial">
+                  <img src="./SVGs/Testimonial.svg" alt="Product SVG" width="40px">
+                  Testimonials</a>
+                </li>      
+                <li class="nav-item" id="faq">
+                  <a class="nav-link active" href="#faqs">
+                      <img src="./SVGs/FAQs.svg" alt="Product SVG" width="45px">
+                      FAQs
+                  </a>
+              </li>              
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+      
+      <section id="product">
+      <div class="product-card">
+        <div class="product-image">
+          <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./References/Image 1.jpg" class="d-block w-100" alt="Image of Product">
+              </div>
+              <div class="carousel-item">
+                <img src="./References/Image 2.jpg" class="d-block w-100" alt="Image of Product">
+              </div>
+              <div class="carousel-item">
+                <img src="./References/Image 3.jpg" class="d-block w-100" alt="Image of Product">
+              </div>
+              <div class="carousel-item">
+                <video class="d-block w-100" autoplay loop muted playsinline>
+                  <source src="./References/Video.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>        
+        </div>
+        <div class="product-info">
+            <h2>Premium Tarot Deck – Durable, Beautifully Designed Cards</h2>
+            <p>A beautifully designed tarot card deck featuring high-quality, detailed illustrations printed on durable, premium cardstock. Each card is crafted for longevity with a smooth finish, ensuring a comfortable shuffle. Comes in a sturdy, elegantly designed hard box for safe storage.</p>
+            <p class="price">₹999</p>
+            <div class="properties">
+                <span><img src="./SVGs/Quality.svg" alt="Premium Quality"> Premium<br>Quality</span>
+                <span><img src="./SVGs/Resolution.svg" alt="High Resolution"> High<br>Resolution</span>
+                <span><img src="./SVGs/Strong-Case.svg" alt="Strong Case"> Strong<br>Case</span>
+                <span><img src="./SVGs/Long-Lasting.svg" alt="Long Lasting"> Long<br>Lasting</span>
+            </div>
+            <a href="https://wa.me/917000018450?text=I%20am%20interested%20in%20purchasing%20your%20tarot%20cards.%20How%20can%20I%20proceed?" target="_blank">
+            <button class="buy-btn"><img src="./SVGs/Troley.svg" alt="Shopping Troley" width="20px">   BUY NOW</button></a>
+        </div>
+      </div>
+      </section>
+      
+      <hr class="hr-text">
+      <img src="./References/HR-Tarot-1.png" alt="HR Icon" class="hr-icon">
+      <hr class="hr-text">
+      
+      <section id="feature">
+        <div class="feature-section">
+          <div class="feature-image">
+            <img src="./References/features-image.png" alt="Tarot Cards">
+          </div>
+          <div class="feature-content">
+            <h2>Features of our Tarot Cards</h2>
+            <div class="feature-tabs">
+              <button class="tab active" data-feature="clarity">Clarity</button>
+              <button class="tab" data-feature="growth">Growth</button>
+              <button class="tab" data-feature="healing">Healing</button>
+              <button class="tab" data-feature="discovery">Discovery</button>
+            </div>
+            <div class="feature-description">
+              <h3 id="feature-title">Clarity</h3>
+              <p id="feature-text">Our tarot cards help bring clarity to your thoughts and decisions, guiding you toward better choices in life.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonial">
+
+      <hr class="hr-text">
+      <img src="./References/HR-Tarot-2.png" alt="HR Icon" class="hr-icon">
+      <hr class="hr-text margin-for-hr">
+
+        <h1>Our Wall of <span><img class="heart" src="./SVGs/Heart.svg" alt="heart"></span></h1>
+        <div class="testimonial-grid">
+          <div class="white-faded">
+            <div class="stars">★★★★★</div>
+          <div class="testimonial-card">
+            <p>"The card designs are absolutely stunning, and the quality feels premium. They’re easy to shuffle, with a nice texture that feels great in hand!"</p>
+            <div class="client-name">- Priya Sharma</div>
+          </div>
+          </div>
+
+          <div class="white-faded">
+            <div class="stars">★★★★★</div>
+          <div class="testimonial-card">
+            <p>"Beautiful artwork with vibrant colors! The cards feel durable, smooth, and the box is super solid—perfect for keeping the deck safe and organized."</p>
+            <div class="client-name">- Ananya Desai</div>
+          </div>
+          </div>
+
+          <div class="white-faded">
+            <div class="stars">★★★★★</div>
+          <div class="testimonial-card">
+            <p>"I’m obsessed with the details on each card. The colors are rich, and the quality is just perfect for daily use without any wear."</p>
+            <div class="client-name">- Naina Kumari</div>
+          </div>
+          </div>
+
+          <div class="white-faded">
+            <div class="stars">★★★★★</div>
+          <div class="testimonial-card">
+            <p>"The quality of these cards surprised me durable, and beautifully designed. The hard box is an added bonus and looks aesthetically pleasing!"</p>
+            <div class="client-name">- Radhika Iyer</div>
+          </div>
+          </div>
+
+          <div class="white-faded">
+            <div class="stars">★★★★★</div>
+          <div class="testimonial-card">
+            <p>"Didn’t expect the cards to feel this premium! Crisp designs, great texture, and honestly, the vibe of the deck is just perfect for readings."</p>
+            <div class="client-name">- Amit Verma</div>
+          </div>
+          </div>
+
+          <div class="white-faded">
+            <div class="stars">★★★★★</div>
+          <div class="testimonial-card">
+            <p>"The artwork is gorgeous, and the card quality is amazing—thick, smooth, and easy to handle. Definitely feels like a well-made, thoughtfully designed deck."</p>
+            <div class="client-name">- Ishita Singh</div>
+          </div>
+          </div>
+        </div>
+      </section>
+
+
+      <hr class="hr-text">
+      <img src="./References/HR-Tarot-1.png" alt="HR Icon" class="hr-icon">
+      <hr class="hr-text">
+
+
+      <section id="faqs">
+        <div class="faq-section">
+          <h1>We're here to answer all your questions</h1>
+          <p class="description">Whether you're new to tarot or looking to enhance your readings, this section will guide you through everything you need to know about our deck and how to use it.</p>
+      
+          <div class="accordion">Is Tarot Fortune-Telling ?</div>
+          <div class="panel">
+            <p>Tarot is not about predicting a fixed future. Instead, it reveals potential paths and empowers you to shape your own destiny.</p>
+          </div>
+      
+          <div class="accordion">Do You Need to Believe in It for It to Work ?</div>
+          <div class="panel">
+            <p>Tarot doesn't require belief to work. The cards are tools, and their insights often resonate regardless of skepticism.</p>
+          </div>
+      
+          <div class="accordion">It's Scary or Negative!</div>
+          <div class="panel">
+            <p>Tarot is not about doom and gloom. Even challenging cards, like The Tower or Death, represent transformation, growth, and the end of cycles, making way for new beginnings.</p>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="logo.png" alt="TAROT BY NOOR Logo">
+            </div>
+            <div class="footer-links">
+                <a href="https://www.instagram.com/tarotbynoor/"><img src="./SVGs/instagram.svg" alt="Instagram Link" width="20px"></a>
+                <a href="https://wa.me/917000018450?text=Hey,%20I%20want%20to%20enquire%20about%20Tarot%20Cards%20and%20Tarot%20Reading!" target="_blank"><img src="./SVGs/whatsapp.svg" alt="WhatsApp Link" width="20px"></a>
+                <a href="https://wa.me/?text=Hey,%20just%20found%20someone%20who%20sells%20cool%20tarot%20cards%20AND%20does%20tarot%20readings.%20Totally%20worth%20checking%20out!" target="_blank">Refer to a Friend</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Copyright TAROT BY NOOR</p>
+            <p>Website by <a href="https://www.instagram.com/gurvansh_juneja/">Gurvansh Singh Juneja</a></p>
+        </div>
+      </footer>
+</body>  
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      <script src="./JavaScript/TW-script.js"></script>
+</body>
+</html>
