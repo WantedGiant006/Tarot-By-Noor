@@ -40,15 +40,6 @@ body {
     transition: all 0.2s ease-in-out;
 }
 
-
-
-
-
-
-
-
-
-
 .product::before{
     content: "";
     position: absolute;
@@ -101,6 +92,10 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.carousel-inner {
+    transition: transform 0.5s ease;
 }
 
 .carousel-inner img {
@@ -243,13 +238,6 @@ body {
     }
 }
 
-
-
-
-
-
-
-
 /* Navbar */
 .container-fluid {
     background-color: var(--primary-beige);
@@ -344,13 +332,6 @@ body {
     display: block;
     margin: -15px auto; /* Adjust spacing */
 }
-
-
-
-
-
-
-
 
 /* Base Styles */
 #feature {
@@ -473,16 +454,6 @@ body {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
 h1 {
     font-family: var(--comfortaa) !important;
     font-size: 2.5em;
@@ -560,13 +531,6 @@ h1 {
     }
 }
 
-
-
-
-
-
-
-
 #faqs {
     font-family: var(--comfortaa);
     margin: 0;
@@ -639,12 +603,6 @@ h1 {
     margin: 0;
     font-size: 0.95em;
 }
-
-
-
-
-
-
 
 .footer {
     background-color: #fefaf3;
