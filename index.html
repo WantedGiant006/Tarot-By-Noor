@@ -16,7 +16,7 @@
     <div id="to-top">
       <a href="#" class="to-top-svg"><img src="./SVGs/To-Top.svg" alt="Arrow Head SVG" width="50px"></a>
     </div>
-
+<div id="tarot-cards" class="both-content active">
     <nav class="navbar navbar-expand-md fixed-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"><img src="./Logo.png" alt="Logo" width="170px" style="padding: 0px;"></a>
@@ -100,11 +100,30 @@
                 <span><img src="./SVGs/Strong-Case.svg" alt="Strong Case"> Strong<br>Case</span>
                 <span><img src="./SVGs/Long-Lasting.svg" alt="Long Lasting"> Long<br>Lasting</span>
             </div>
+
+            <div class="switch-placeholder"></div>
+            
+            <div class="buy-btn-container">
             <a href="https://wa.me/917000018450?text=I%20am%20interested%20in%20purchasing%20your%20tarot%20cards.%20How%20can%20I%20proceed?" target="_blank">
-            <button class="buy-btn"><img src="./SVGs/Troley.svg" alt="Shopping Troley" width="20px">   BUY NOW</button></a>
+            <button class="buy-btn"><img src="./SVGs/Troley.svg" alt="Shopping Troley" width="20px">   BUY NOW</button></a></div>
         </div>
       </div>
       </section>
+
+      <div id="common-switch" class="switch">
+        <div class="product-switch">
+          <button class="switch-btn active" data-product="cards">
+            <img src="./SVGs/Cards-Product.svg" alt="Tarot Cards" width="40px">
+          </button>
+          <p>Deck</p>
+        </div>
+        <div class="reading-switch">
+          <button class="switch-btn" data-product="reading">
+            <img src="./SVGs/Cards-Reading.svg" alt="Tarot Reading" width="40px">
+          </button>
+          <p>Tarot<br>Reading</p>
+        </div>
+      </div>
       
       <hr class="hr-text">
       <img src="./References/HR-Tarot-1.png" alt="HR Icon" class="hr-icon">
@@ -216,23 +235,202 @@
           </div>
         </div>
       </section>
+</div>
 
-      <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-logo">
-                <img src="./Logo.png" alt="TAROT BY NOOR Logo">
+
+
+<div id="tarot-reading" class="both-content">
+      <nav class="navbar navbar-expand-md fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="./Logo.png" alt="Logo" width="170px" style="padding: 0px;"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <img src="./SVGs/Menu.svg" width="30px" height="30px" alt="Toggle Button">
+        </button>
+                  <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link active" id="products" aria-current="page" href="#reading">
+                  <img src="./SVGs/Product.svg" alt="Product SVG" width="40px">
+                  Reading</a>
+                </li>
+                <li class="nav-item" id="features">
+                  <a class="nav-link active" aria-current="page" href="#read-feature">
+                  <img src="./SVGs/Features.svg" alt="Product SVG" width="35px">
+                  Features</a>
+                </li>
+                <li class="nav-item" id="testimonials">
+                  <a class="nav-link active" aria-current="page" href="#read-testimonial">
+                  <img src="./SVGs/Testimonial.svg" alt="Product SVG" width="40px">
+                  Testimonials</a>
+                </li>                    
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+      
+      <section id="reading">
+        <div class="product-card">
+            <div class="product-image read-prod-img">
+                <img src="./References/reading-image.png" alt="Tarot Reading Image">      
             </div>
-            <div class="footer-links">
-                <a href="https://www.instagram.com/tarotbynoor/"><img src="./SVGs/instagram.svg" alt="Instagram Link" width="20px"></a>
-                <a href="https://wa.me/917000018450?text=Hey,%20I%20want%20to%20enquire%20about%20Tarot%20Cards%20and%20Tarot%20Reading!" target="_blank"><img src="./SVGs/whatsapp.svg" alt="WhatsApp Link" width="20px"></a>
-                <a href="https://wa.me/?text=Hey,%20just%20found%20someone%20who%20sells%20cool%20tarot%20cards%20AND%20does%20tarot%20readings.%20Totally%20worth%20checking%20out!%20https://www.tarotbynoor.in/" target="_blank">Refer to a Friend</a>
+            <div class="product-info read-product-info">
+                <h2>Gain Clarity with a Personalized Tarot Session</h2>
+                <p>Experience a personalized tarot reading that offers clarity and guidance. Each session is carefully conducted with attention to detail, providing meaningful insights tailored to your questions. Whether you seek direction, self-reflection, or simple curiosity, every reading is delivered with professionalism and authenticity</p>
+                
+                <section class="pricing-section">
+                  <div class="pricing-card">
+                      <div class="pricing-header">2 Ques</div>
+                      <div class="pricing-body">₹151</div>
+                  </div>
+                  <div class="pricing-card">
+                      <div class="pricing-header">10 mins</div>
+                      <div class="pricing-body">₹249</div>
+                  </div>
+                  <div class="pricing-card">
+                      <div class="pricing-header">15 mins</div>
+                      <div class="pricing-body">₹329</div>
+                  </div>
+                  <div class="pricing-card">
+                      <div class="pricing-header">30 mins</div>
+                      <div class="pricing-body">₹499</div>
+                  </div>
+                  <div class="pricing-card">
+                      <div class="pricing-header">45 mins</div>
+                      <div class="pricing-body">₹699</div>
+                  </div>
+              </section>
+              
+
+                <div class="properties reading-prop-container">
+                    <span class="reading-prop"><img src="./SVGs/Supportive-Assistance.svg" alt="Supportive Assistance"> Supportive<br>Assistance</span>
+                    <span class="reading-prop"><img src="./SVGs/Easy-Scheduling.svg" alt="Easy Scheduling"> Easy<br>Scheduling</span>
+                    <span class="reading-prop"><img src="./SVGs/Focused-On-You.svg" alt="Focused On YOU"> Focused<br>on YOU</span>
+                    <span class="reading-prop"><img src="./SVGs/Clear-Explanations.svg" alt="Clear Explanations"> Clear<br>Explanations</span>
+                </div>
+                
+                <div class="switch-placeholder"></div>
+    
+                <div class="buy-btn-container">
+                    <a href="https://wa.me/917000018450?text=Hi!%20I’d%20like%20to%20book%20a%20tarot%20session.%20Can%20you%20share%20your%20available%20slots?" target="_blank">
+                        <button class="buy-btn book-now-btn">
+                            <img src="./SVGs/book-now.svg" alt="Book Now SVG" width="40px"> BOOK NOW
+                        </button></div>
+                    </a>
             </div>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 Copyright TAROT BY NOOR</p>
-            <p>Website by <a href="https://www.instagram.com/gurvansh_juneja/">Gurvansh Singh Juneja</a></p>
+    </section>
+    
+      
+      <hr class="hr-text">
+      <img src="./References/HR-Tarot-1.png" alt="HR Icon" class="hr-icon">
+      <hr class="hr-text">
+      
+      <section id="read-feature">
+        <div class="feature-section">
+          <div class="feature-image">
+            <img src="./References/reading-features-image.png" alt="Tarot Cards">
+          </div>
+          <div class="feature-content">
+            <h2>Features of our Tarot Cards</h2>
+            <div class="feature-tabs">
+              <button class="tab active" data-feature="clarity">Clarity</button>
+              <button class="tab" data-feature="growth">Growth</button>
+              <button class="tab" data-feature="healing">Healing</button>
+              <button class="tab" data-feature="discovery">Discovery</button>
+            </div>
+            <div class="feature-description">
+              <h3 id="read-feature-title">Clarity</h3>
+              <p id="read-feature-text">Our tarot cards help bring clarity to your thoughts and decisions, guiding you toward better choices in life.</p>
+            </div>
+          </div>
         </div>
-      </footer>
+      </section>
+
+      <section id="read-testimonial">
+
+      <hr class="hr-text">
+      <img src="./References/HR-Tarot-2.png" alt="HR Icon" class="hr-icon">
+      <hr class="hr-text margin-for-hr">
+
+        <h1>Our Wall of <span><img class="heart" src="./SVGs/Heart.svg" alt="heart"></span></h1>
+        <div class="testimonial-grid">
+          <div class="white-faded">
+            <div class="stars">★★★★★</div>
+          <div class="testimonial-card">
+            <p>"I had an amazing tarot reading session with Noor! Her insights were incredibly accurate, and the guidance she provided felt so personal and meaningful."</p>
+            <div class="client-name">- Arpita Deshmukh</div>
+          </div>
+          </div>
+
+          <div class="white-faded">
+            <div class="stars">★★★★★</div>
+          <div class="testimonial-card">
+            <p>"She explained everything with such clarity and warmth. I'm genuinely impressed by her talent and feel so much more confident and guided after the session."</p>
+            <div class="client-name">- Ishika Kulkarni</div>
+          </div>
+          </div>
+
+          <div class="white-faded">
+            <div class="stars">★★★★★</div>
+          <div class="testimonial-card">
+            <p>"She has a calm and comforting energy that made me feel at ease throughout the session. I truly appreciate her clarity and intuitive wisdom."</p>
+            <div class="client-name">- Saanvika Trivedi</div>
+          </div>
+          </div>
+
+          <div class="white-faded">
+            <div class="stars">★★★★★</div>
+          <div class="testimonial-card">
+            <p>"I must say that reading was truly amazing! Her insights were so accurate and resonated deeply with me. I highly recommend her to anyone seeking a genuine and impactful tarot reading!"</p>
+            <div class="client-name">- Shruti Rao</div>
+          </div>
+          </div>
+
+          <div class="white-faded">
+            <div class="stars">★★★★★</div>
+          <div class="testimonial-card">
+            <p>"She really listens and guides me like a friend. I told a few of my friends about our session, and today they called me to tell me how spot on she is with them."</p>
+            <div class="client-name">- Ananya Desai</div>
+          </div>
+          </div>
+
+          <div class="white-faded">
+            <div class="stars">★★★★★</div>
+          <div class="testimonial-card">
+            <p>"I am so happy to have had a personal tarot session with her. She should help many other people out there like me—she is so good at her work. God bless you, Noor. Thank you so much!"</p>
+            <div class="client-name">- Aakruti Satdeve</div>
+          </div>
+          </div>
+        </div>
+      </section>
+</div>      
+
+
+      <hr class="hr-text">
+      <img src="./References/HR-Tarot-1.png" alt="HR Icon" class="hr-icon">
+      <hr class="hr-text">
+
+
+<footer class="footer active">
+  <div class="footer-content">
+      <div class="footer-logo">
+          <img src="./Logo.png" alt="TAROT BY NOOR Logo">
+      </div>
+      <div class="footer-links">
+          <a href="https://www.instagram.com/tarotbynoor/"><img src="./SVGs/instagram.svg" alt="Instagram Link" width="20px"></a>
+          <a href="https://wa.me/917000018450?text=Hey,%20I%20want%20to%20enquire%20about%20Tarot%20Cards%20and%20Tarot%20Reading!" target="_blank"><img src="./SVGs/whatsapp.svg" alt="WhatsApp Link" width="20px"></a>
+          <a href="https://wa.me/?text=Hey,%20just%20found%20someone%20who%20sells%20cool%20tarot%20cards%20AND%20does%20tarot%20readings.%20Totally%20worth%20checking%20out!%20https://www.tarotbynoor.in/" target="_blank">Refer to a Friend</a>
+      </div>
+  </div>
+  <div class="footer-bottom">
+      <p>&copy; 2025 Copyright TAROT BY NOOR</p>
+      <p>Website by <a href="https://www.instagram.com/gurvansh_juneja/">Gurvansh Singh Juneja</a></p>
+  </div>
+</footer>
+
+
+
 </body>  
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
       <script src="./JavaScript/TW-script.js"></script>
