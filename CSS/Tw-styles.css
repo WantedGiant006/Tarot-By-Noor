@@ -19,6 +19,16 @@ body {
     --comfortaa: "Comfortaa", sans-serif;
 }
 
+.both-content {
+    display: none;
+    opacity: 0;
+}
+
+.both-content.active {
+    display: block;
+    opacity: 1;
+}
+
 #to-top{
     position: fixed;
     width: 55px;
@@ -122,8 +132,13 @@ body {
 .product-info {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start ;
+    height: 100%;
     max-width: 500px;
+}
+
+.read-product-info {
+    margin-top: 60px;
 }
 
 .product-info h2 {
@@ -147,6 +162,53 @@ body {
     color: var(--darkest-blue) !important;
     margin: 10px 0;
 }
+
+/* Pricing Section */
+.pricing-section {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-top: 20px;
+}
+
+/* Individual Pricing Card */
+.pricing-card {
+    font-family: var(--comfortaa);
+    width: 100px;
+    text-align: center;
+    border-radius: 25px;
+    overflow: hidden;
+    background-color: var(--lightest-blue); /* Light blue */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease-in-out;
+}
+
+.pricing-card:hover {
+    scale: 1.02;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease-in-out;
+}
+
+/* Top Blue Section */
+.pricing-header {
+    background-color: var(--darkest-blue); /* Dark blue */
+    color: var(--lightest-blue);
+    padding: 10px;
+    font-weight: bold;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+/* Price */
+.pricing-body {
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--darkest-blue);
+}
+
 
 /* Properties */
 .properties {
@@ -172,12 +234,63 @@ body {
     border-radius: 5px;
 }
 
-.properties img {
-    width: 20px;
-    height: 20px;
+.reading-prop-container {
+    flex-wrap: nowrap;
 }
 
-/* Buy Button */
+.reading-prop img{
+    width: 30px !important;
+    height: 30px !important; 
+}
+
+.properties img {
+    width: 25px;
+    height: 25px;
+}
+
+/* Switches */
+.switch {
+    display: flex;
+    gap: 30px;
+    align-self: stretch;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: auto;
+}
+
+.switch-btn {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    margin-top: 20px;
+    background-color: var(--lighter-blue);
+    border-radius: 50%;
+    border: none;
+    transition: 0.3s;
+}
+
+.switch-btn.active {
+    border: solid 1px var(--darkest-blue) !important;
+    box-shadow:0px 2px 7px rgba(0, 0, 0, 0.4) !important;
+}
+
+.product-switch p, .reading-switch p {
+    margin-top: 8px;
+    font-size: 10px;
+    text-align: center;
+}
+
+.switch-btn:hover {
+    background-color: var(--hover-blue);
+}
+
+.switch, .buy-btn-container {
+    width: 100%;  
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Buy Button  */
 .buy-btn {
     font-family: var(--archivo-black);
     background: var(--lighter-blue);
@@ -189,8 +302,12 @@ body {
     font-size: 16px;
     cursor: pointer;
     border-radius: 15px;
-    margin-top: 10px;
     transition: all 0.2s;
+}
+
+.book-now-btn {
+    width: auto;
+    font-size: 17px;
 }
 
 .buy-btn:hover {
@@ -211,7 +328,22 @@ body {
         max-width: 100%;
         padding: 0 20px;
     }
+    .reading-prop-container {
+        flex-wrap: wrap;
+    }
+    
+    .pricing-section {
+        flex-wrap: wrap;
+    }
 
+    .switch, .buy-btn-container {
+        justify-content: center;
+    }
+    
+    .properties {
+        justify-content: center;
+    }
+    
     .product-info {
         position: static;
     }
@@ -225,6 +357,10 @@ body {
         align-items: center;
         justify-content: center;
         overflow: hidden;
+    }
+
+    .read-prod-img{
+        height: 300px;
     }
 
     .product-image img {
@@ -326,6 +462,7 @@ body {
       padding: 5px;
     }
 }
+
   .hr-icon {
     width: 100px;
     height: auto;
@@ -335,6 +472,16 @@ body {
 
 /* Base Styles */
 #feature {
+    font-family: var(--comfortaa);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 0;
+}
+#read-feature {
     font-family: var(--comfortaa);
     display: flex;
     justify-content: center;
@@ -469,6 +616,10 @@ h1 {
 }
 
 #testimonial {
+    margin-top: 50px ;
+    margin-bottom: 90px;
+}
+#read-testimonial {
     margin-top: 50px ;
     margin-bottom: 90px;
 }
