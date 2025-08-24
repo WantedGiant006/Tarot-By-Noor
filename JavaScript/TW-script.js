@@ -1,13 +1,3 @@
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-H50D4V5VYF"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-H50D4V5VYF');
-</script>
-
 // Function to move the common switch to the active section's placeholder
 function moveSwitchToActiveSection() {
     const activeSection = document.querySelector('.both-content.active');
@@ -182,4 +172,5 @@ window.onscroll = function() {
       btn.style.display = "none";
     }
   };
+
 
